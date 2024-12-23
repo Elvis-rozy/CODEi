@@ -1,0 +1,443 @@
+.blurdIn {
+  opacity: 0;
+  animation: elementBlurIn .8s ease-in-out forwards;
+}
+.blurIn {
+  opacity: 0;
+  animation: elementsBlurIn .8s ease-in-out forwards;
+}
+.inView {
+  height: 0;
+  animation: elementsGrowIn .8s ease-in-out forwards;
+}
+.widthIn {
+  width: 0;
+  animation: elementsWidthIn .8s ease-in-out forwards;
+}
+
+.showMenu {
+  animation: menuShow .5s ease-out forwards;
+}
+
+.rotate45 {
+  transform: rotate(45deg);
+}
+
+.hideMenu {
+  animation: menuHide .5s ease-out forwards;
+}
+
+.showIcons {
+  animation: showIT .5s ease-out forwards;
+}
+
+.hideIcons {
+  animation: hideIT .5s ease-out forwards;
+}
+
+.navigation{
+  height: 80dvh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #1c1c1c;
+  position: absolute;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+  left: 2dvw;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 30px;
+    background: #1c1c1c;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+
+  .link {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: .3s;
+
+    .linkText {
+      position: absolute;
+      text-shadow: 1px 1px 2px black;
+      top: 0;
+      transition: .5s;
+    }
+  }
+
+  .a, .b, .c, .d, .e, .f, .g {
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  img {
+    transition: .2s;
+    z-index: 4;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:hover~.a, &:hover~.b, &:hover~.c,
+    &:hover~.d, &:hover~.e, &:hover~.f, &:hover~.g {
+      opacity: 1;
+      filter: blur(0);
+    }
+
+    &:hover~.a {
+      right: -120%;
+    }
+    &:hover~.b {
+      right: -150%;
+    }
+    &:hover~.c {
+      right: -105%;
+    }
+    &:hover~.d {
+      right: -180%;
+    }
+    &:hover~.e {
+      right: -90%;
+    }
+    &:hover~.f {
+      right: -120%;
+    }
+    &:hover~.g {
+      right: -145%;
+    }
+  }
+}
+
+.backButton {
+  position: fixed;
+  z-index: 2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .5s;
+  left: 2dvw;
+  box-shadow: inset 6px 0px 8px 0px #00000091;
+  background: rgb(88 112 133 / 72%);
+
+  &:hover {
+    background: rgb(25 59 88 / 72%);
+  }
+}
+
+//Desktop
+@media (min-width: (700px)) {
+  .backButton {
+    padding: 8px;
+    width: 3dvw;
+    top: 10dvh;
+  }
+  .navigation {
+    width: 3dvw;
+    top: 20dvh;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.5dvh;
+  }
+
+}
+//Tablet
+@media (max-width: (699px)) {
+  .backButton {
+    padding: 5px;
+    width: 5vw;
+  }
+  .navigation {
+    width: 5dvw;
+    top: 12dvh;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.5dvh;
+  }
+
+}
+//Phone
+@media (max-width: (399px)) {
+  .backButton {
+    padding: 6px;
+    width: 8dvw;
+    top: 1dvh;
+  }
+  .navigation {
+    width: 9dvw;
+    top: 7dvh;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1dvh;
+  }
+
+}
+
+
+.dropdownArrow {
+  transform: rotate(-450deg) scale(.94);
+}
+
+.blocks-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.row {
+  flex: 1;
+  width: 100%;
+  display: flex;
+}
+
+.block {
+  position: relative;
+  flex: 1;
+  background: black;
+  margin: -0.25px;
+}
+
+.transition-in .block {
+  transform-origin: top;
+}
+
+.transition-out .block {
+  transform-origin: bottom;
+}
+
+.ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  width: 100dvw;
+  position: fixed;
+  z-index: 6;
+  pointer-events: none;
+  gap: 10px;
+  top: 0;
+  left: 0;
+
+  .pageText {
+    color: #1de8f1;
+    font-size: 30px;
+  }
+  .pageImg {
+    display: flex;
+    width: 25px;
+  }
+}
+
+.off {
+  animation: off 1s linear forwards;
+}
+
+.on {
+  animation: on 1s linear forwards;
+}
+
+.growOut {
+  animation: growOut 1s linear forwards;
+}
+
+.growIn {
+  animation: growIn 1s linear forwards;
+}
+
+.cancel {
+  position: absolute;
+  top: 5dvh;
+  left: 3dvw;
+  width: 1.8dvw;
+  transition: .3s;
+  z-index: 4;
+
+  &:hover {
+    transform: scale(.95);
+  }
+}
+
+.fixed {
+  position: fixed;
+}
+
+.boldFont {
+  font-family: "montserratBold";
+  font-weight: 700;
+}
+
+.shape {
+  border-radius: 15px;
+  background: #1c1c1c;
+  position: relative;
+  transition: .3s;
+  cursor: pointer;
+  
+  &:hover {
+    margin: 5px;
+    
+    .titleBox .title {
+      transition: .3s;
+      font-size: 5dvh;
+      line-height: 3dvw;
+    }
+
+    img {
+      filter: blur(4px);
+    }
+  }
+}
+
+.titleBox {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  padding: 10px;
+
+  .title{
+    font-size: 1.5dvw;
+    line-height: 1.3dvw;
+  }
+}
+
+.align{
+  align-items: center;
+}
+
+.topLeft{
+  top: 0;
+  left: 0;
+}
+
+.bottomRight{
+  bottom: 10%;
+  right: 0;
+}
+
+.btmRight{
+  bottom: 5%;
+  right: 8%;
+}
+
+.bottom{
+  bottom: 0;
+}
+
+.halfPill {
+  background: black;
+  border-radius: 20px 0 0 20px;
+}
+
+.pill {
+  background: black;
+  border-radius: 20px;
+}
+
+.displayed {
+  transition: .5s;
+  width: 94vw;
+  height: 82vh;
+}
+
+.topTitle {
+  position: fixed;
+  color: white;
+  text-align: center;
+  width: 100%;
+  top: 10%;
+  left: 0;
+
+  p {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  strong {
+    color: #d581d5;
+  }
+}
+
+.ceos {
+  position: absolute;
+  top: 17dvh;
+  left: 10%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(45deg, #ff009963, #3bdbff8c);
+  padding: 10px 8px;
+  border-radius: 12px;
+  transition: .3s;
+
+  &:hover {
+    transform: rotate3d(-7, -6, -3, 20deg);
+    box-shadow: -20px 18px 10px 0px #00000075;
+  }
+
+  .item {
+    background: black;
+    width: 200px;
+    height: 35px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+
+    &:hover {
+      transform: translateX(20%);
+      box-shadow: -20px 10px 10px 0px #0000004f;
+    }
+  }
+}
+
+.imgCard {
+  width: 15dvw;
+  display: flex;
+  height: 20dvh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 40px;
+  }
+}
+
+.splineBg {
+  position: absolute;
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .spline {
+    width: 50%;
+    height: 50%;
+  }
+}

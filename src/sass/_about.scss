@@ -1,0 +1,271 @@
+.AboutPage {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  justify-content: center;
+  align-items: end;
+  margin: 0 3dvw 0 15dvh;
+  gap: 3dvh;
+
+  .vision {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: url("../media/backgrounds/vis.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55dvh;
+    border-radius: 30px;
+    animation-delay: 1.2s;
+    align-items: center;
+    overflow: hidden;
+
+    .topCard {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 50%;
+
+      h2 {
+        font-size: 10dvh;
+        width: 21%;
+      }
+
+      p {
+        font-size: 14px;
+        width: 40%;
+      }
+    }
+
+    .btmCard {
+      position: absolute;
+      right: 3%;
+      width: 35%;
+      bottom: 10%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      h2 {
+        font-size: 2dvh;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .Ceo {
+      position: absolute;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      font-size: 13px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10dvw;
+        left: 7%;
+        height: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 3dvw;
+        right: 0;
+        top: 40%;
+        height: 12dvh;
+      }
+    }
+
+    .banner1 {
+      &::before {background: red;}
+      &::after {background: red;}
+    }
+    .banner2 {
+      &::before {background: blue;}
+      &::after {background: blue;}
+    }
+    .banner3 {
+      &::before {background: green;}
+      &::after {background: green;}
+    }
+    .banner4 {
+      &::before {background: yellow;}
+      &::after {background: yellow;}
+    }
+
+    .serialNumber {
+      position: absolute;
+      font-size: 22dvh;
+      left: 6%;
+      top: 17%;
+    }
+
+    .firstName {
+      position: absolute;
+      font-size: 6dvh;
+      left: 14%;
+      bottom: 26%;
+    }
+
+    .lastName {
+      position: absolute;
+      font-size: 6dvh;
+      left: 16%;
+      bottom: 12%;
+      font-weight: 100;
+    }
+
+    .bio {
+      position: absolute;
+      width: 32%;
+      left: 20%;
+      top: 10%;
+    }
+
+    .education {
+      position: absolute;
+      width: 30%;
+      right: 5%;
+      top: 15%;
+    }
+
+    .experience {
+      position: absolute;
+      width: 30%;
+      right: 5%;
+      bottom: 25%;
+      display: flex;
+      gap: 5px;
+      flex-direction: column;
+
+      h4 {
+        font-size: 16px;
+      }
+    }
+
+    .contactLinks {
+      position: absolute;
+      right: 35%;
+      bottom: 5%;
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 30px;
+        height:30px;
+        padding: 5px;
+        background: white;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .devTeam {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.5fr;
+    width: 90dvw;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    .teamHd {
+      font-size: 8dvh;
+      text-align: end;
+      color: black;
+      animation-delay: 2.2s;
+    }
+
+    .team {
+      display: flex;
+      height: 35dvh;
+      justify-content: center;
+      gap: 10px;
+      width: 50dvw;
+
+      .textCard {
+        display: flex;
+        border-radius: 30px;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: end;
+        padding: 0 2dvw 4dvh 2dvw;
+        cursor: pointer;
+        transition: .3s;
+
+        &:nth-child(1) {
+          background: url("../media/backgrounds/profiles/ceo1.jpg");
+          background-position: center;
+          background-size: cover;
+          animation-delay: .4s;
+        }
+        &:nth-child(2) {
+          background: url("../media/backgrounds/profiles/ceo2.jpg");
+          background-position: center;
+          background-size: cover;
+          animation-delay: .5s;
+        }
+        &:nth-child(3) {
+          background: url("../media/backgrounds/profiles/ceo3.jpg");
+          background-position: center;
+          background-size: cover;
+          animation-delay: .6s;
+        }
+        &:nth-child(4) {
+          background: url("../media/backgrounds/profiles/ceo4.jpg");
+          background-position: center;
+          background-size: cover;
+          animation-delay: .7s;
+        }
+
+        h2 {
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .combinedStack {
+      position: relative;
+      background: url("../media/backgrounds/bkk.jpg");
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 35dvh;
+      display: flex;
+      padding: 10px;
+      gap: 10px;
+      flex-wrap: wrap;
+      border-radius: 30px;
+      justify-content: center;
+      align-items: center;
+      animation-delay: 1s;
+
+      img {
+        height: 45px;
+      }
+    }
+  }
+}
+
+.veiled {
+  width: 4dvw;
+  filter: brightness(.3);
+}
+
+.unveiled {
+  filter: brightness(1);
+  box-shadow: 6px 7px 8px 0px #00000061;
+  width: 100%;
+}

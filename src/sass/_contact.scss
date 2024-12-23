@@ -1,0 +1,224 @@
+.contactMain {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.8fr;
+  height: 100dvh;
+  background: white;
+  align-items: center;
+  justify-content: center;
+
+  .left {
+
+    h1 {
+      left: 15%;
+      top: 20%;
+      animation-delay: 5s;
+    }
+  }
+
+  article {
+    width: 100%;
+    height: 65%;
+
+    h1 {
+      color: black;
+      font-size: 20dvh;
+      position: absolute;
+      z-index: 2;
+      text-transform: uppercase;
+      animation: contactLoad 1s linear forwards;
+      font-family: droid;
+      opacity: 0;
+    }
+  }
+
+  .b {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+
+
+    video {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .box {
+      position: absolute;
+      background: white;
+      mix-blend-mode: screen;
+      width: 100%;
+      height: 100%;
+
+      span {
+        background: black;
+        width: 90%;
+        height: 11%;
+        position: absolute;
+        border-radius: 10px;
+
+        &:first-child {
+          width: 80%;
+          top: 0;
+          left: 0;
+          animation-delay: 1s;
+        }
+        &:nth-child(3) {
+          top: 24%;
+          width: 70%;
+          left: 15%;
+          animation-delay: 2.2s;
+        }
+        &:nth-child(5) {
+          top: 48%;
+          right: 0;
+          animation-delay: 2.8s;
+        }
+        &:nth-child(8) {
+          top: 84%;
+          left: 10%;
+          width: 70%;
+          animation-delay: 3.8s;
+        }
+      }
+
+      .row2 {
+        position: absolute;
+        top: 12%;
+        width: 90%;
+        height: 11%;
+        display: flex;
+        right: 0;
+        gap: 2%;
+
+        .sp1 {
+          position: relative;
+          height: 100%;
+          width: 40%;
+          animation-delay: 1.2s;
+        }
+        .sp2 {
+          position: relative;
+          top: 0;
+          height: 100%;
+          width: 80%;
+          animation-delay: 1.4s;
+        }
+      }
+      .row4 {
+        position: absolute;
+        top: 36%;
+        width: 90%;
+        height: 11%;
+        display: flex;
+        right: 0;
+        gap: 2%;
+
+        .sp1 {
+          position: relative;
+          height: 100%;
+          width: 40%;
+          animation-delay: 2.4s;
+        }
+        .sp2 {
+          position: relative;
+          top: 0;
+          height: 100%;
+          width: 80%;
+          animation-delay: 2.6s;
+        }
+      }
+      .row5 {
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        height: 11%;
+        display: flex;
+        right: 0;
+        gap: 2%;
+
+        .sp1 {
+          position: relative;
+          height: 100%;
+          width: 60%;
+          animation-delay: 3s;
+        }
+        .sp2 {
+          position: relative;
+          top: 0;
+          height: 100%;
+          width: 40%;
+          animation-delay: 3.2s;
+        }
+      }
+      .row6 {
+        position: absolute;
+        top: 72%;
+        width: 80%;
+        height: 11%;
+        display: flex;
+        right: 0;
+        gap: 2%;
+
+        .sp1 {
+          position: relative;
+          height: 100%;
+          width: 25%;
+          animation-delay: 3.4s;
+        }
+        .sp2 {
+          position: relative;
+          top: 0;
+          height: 100%;
+          width: 75%;
+          animation-delay: 3.6s;
+        }
+      }
+    }
+
+    h1 {
+      left: 25%;
+      top: 30%;
+      animation-delay: 5.1s;
+      color: white;
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      right: 10%;
+      bottom: 25%;
+      animation-delay: 5.3s;
+    }
+
+    .contactIcons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 5dvh;
+        height: 5dvh;
+        transition: .3s;
+
+        &:hover{
+          width: 10dvh;
+          height: 10dvh;
+        }
+      }
+
+      .ad {animation-delay: 5.5s;}
+      .bd {animation-delay: 6s;}
+      .cd {animation-delay: 6.5s;}
+      .dd {animation-delay: 7s;}
+    }
+  }
+}

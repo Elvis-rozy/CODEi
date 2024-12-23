@@ -1,0 +1,327 @@
+.Home {
+  position: relative;
+  margin: 0 3dvw;
+  overflow: hidden;
+  gap: 1.5dvh;
+
+  .logo {
+    position: fixed;
+    left: 4%;
+    z-index: 2;
+    top: 2%;
+  }
+
+  .leftGrid {
+    grid-template-rows: repeat(2, 1fr);
+
+    .topLeftGrid {
+      grid-template-columns: 1.6fr 1fr;
+
+      .ServicesSection {
+        grid-template-rows: 1fr 1.8fr;
+
+        .topServices {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          justify-content: center;
+          background: #000;
+          animation-delay: 1s;
+          position: relative;
+
+          .TITLE {
+            z-index: 2;
+          }
+        }
+
+        .bottomServices {
+          grid-template-columns: repeat(2, 1fr);
+
+          .list {
+            animation-delay: 1.4s;
+            background: url("../media/backgrounds/bkk.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            li {
+              gap: 1dvh;
+              display: flex;
+              align-items: center;
+              margin: 0 10px 0 10px;
+              height: 25%;
+
+              &:not(:last-child) { border-bottom: 1px solid #55545461; }
+
+              strong {
+                width: 20%;
+              }
+            }
+          }
+
+          .slideShow {
+            background: url("../media/backgrounds/svs4.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: .5s;
+            animation-delay: 1.2s;
+          }
+        }
+      }
+
+      .workSection {
+        background: url("../media/backgrounds/wk1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation-delay: 1.6s;
+
+        &:hover {
+          background: url("../media/backgrounds/wk1b.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .btmLeftGrid {
+      grid-template-columns: 1fr 2fr;
+
+      .blogSection {
+        background: url("../media/backgrounds/bg1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation-delay: 2s;
+        
+        &:hover {
+          background: url("../media/backgrounds/bg1b.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      
+      .aboutSection {
+        background: url("../media/backgrounds/abt1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation-delay: 2.2s;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+          background: url("../media/backgrounds/abt1b.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          background: linear-gradient(to right, black, rgba(0, 0, 0, 0.726),transparent);
+          height: 100%;
+          width: 60%;
+          left: 0;
+          top: 0;
+        }
+
+        .textCarousel {
+          display: flex;
+          position: relative;
+          height: 15vh;
+          top: 30%;
+          overflow: hidden;
+          left: 5%;
+
+          .textLineup {
+            position: absolute;
+            animation: textSlide 30s ease-in forwards infinite;
+            transition: .3s;
+            display: flex;
+            gap: 30px;
+          }
+
+          .textCard {
+            height: 15vh;
+            width: 8vw;
+            display: flex;
+            flex-direction: column;
+
+            h2 { font-size: 3.3dvw; }
+
+            p {
+              width: 8vw;
+              font-size: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rightGrid {
+    grid-template-rows: 1fr 1.8fr;
+
+    .resourcesSection {
+      background: url("../media/backgrounds/res1.jpg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      animation-delay: 1.8s;
+
+      &:hover {
+        background: url("../media/backgrounds/res1b.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .contactSection {
+      grid-template-columns: repeat(2, 1fr);
+      color: black;
+
+      .contctLeft {
+        background: url("../media/backgrounds/contact1.jpg");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        animation-delay: 2.4s;
+
+        &:hover {
+          background: url("../media/backgrounds/contact1b.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .contctRight {
+        background: url("../media/backgrounds/contact2.jpg");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        animation-delay: 2.6s;
+
+        &:hover {
+          background: url("../media/backgrounds/contact2b.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .contctLeft, .contctRight { filter: brightness(0.9); }
+
+      .bigText {
+        position: absolute;
+        color: black;
+        top: 20%;
+      }
+
+      .a { right: 0; }
+
+      .b { left: 0; }
+    }
+  }
+}
+
+//Desktop
+@media (min-width: (700px)) {
+  .Home {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    overflow: hidden;
+    top: 11dvh;
+    height: 84dvh;
+
+    .logo {
+      img { height: 7dvh; }
+    }
+
+    .topServices img {
+      width: 40px;
+    }
+
+
+    .rightGrid .contactSection .contctRight {
+      height: auto;
+    }
+
+    .titleBox .title {
+      font-size: 2dvw;
+      line-height: 2dvw;
+      text-shadow: 3px 3px black;
+    }
+
+    .contactSection .bigText {
+      font-size: 6dvw;
+    }
+
+    .aboutSection .textCarousel {
+      width: 8vw;
+    }
+
+    .list li {
+      font-size: 1.35dvh;
+      line-height: normal;
+
+      strong {
+        font-size: 1.5dvh;
+      }
+    }
+  }
+}
+//Phone
+@media (max-width: (699px)) {
+  .Home {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    top: 8dvh;
+    height: 90dvh;
+
+    .topServices img {
+      width: 30px;
+    }
+
+    .leftGrid {
+      height: 75dvh;
+    }
+
+    .logo {
+      img { height: 5dvh; }
+    }
+
+    .rightGrid .contactSection .contctRight {
+      height: 40dvh;
+    }
+
+    .titleBox .title {
+      font-size: 2dvh;
+      line-height: 4dvw;
+    }
+
+    .contactSection .bigText {
+      font-size: 10dvh;
+    }
+
+    .aboutSection .textCarousel {
+      width: 14vw;
+    }
+
+    .list li {
+      font-size: .9dvh;
+      line-height: 7px;
+
+      strong {
+        font-size: 1.2dvh;
+      }
+    }
+  }
+}
