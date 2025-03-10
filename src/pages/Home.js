@@ -53,24 +53,17 @@ const Home=()=> {
             </Link>
           </section>
         </aside>
-        <aside className="rightGrid grid">
-          <Link to="/resources" id="homeResources" className="resourcesSection shape blurIn">
-            <article className="titleBox bottomRight halfPill">
-              <span className="title">RESOURCES</span>
+         <Link to="/contact" id="homeContact" className="contactSection grid">
+          <article className="contctLeft shape blurIn">
+            <h1 className="bigText a">CO</h1>
+          </article>
+          <article className="contctRight shape blurIn">
+            <h1 className="bigText b">DEi</h1>
+            <article className="titleBox align btmRight boldFont pill">
+              <Title array="contactTitle"/>
             </article>
-          </Link>
-          <Link to="/contact" id="homeContact" className="contactSection grid">
-            <article className="contctLeft shape blurIn">
-              <h1 className="bigText a">CO</h1>
-            </article>
-            <article className="contctRight shape blurIn">
-              <h1 className="bigText b">DEi</h1>
-              <article className="titleBox align btmRight boldFont pill">
-                <Title array="contactTitle"/>
-              </article>
-            </article>
-          </Link>
-        </aside>
+          </article>
+        </Link>
       </main>
     </PageAnimation>
   );

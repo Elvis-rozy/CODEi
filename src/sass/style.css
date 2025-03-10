@@ -1,23 +1,14 @@
 .Home {
-  grid-template-columns: 1.8fr 1fr;
-  height: 84dvh;
   position: relative;
-  top: 11dvh;
   margin: 0 3dvw;
   overflow: hidden;
+  gap: 1.5dvh;
 }
 .Home .logo {
   position: fixed;
-  top: 3dvh;
-  left: 46dvw;
-  padding: 10px 21px;
-  box-shadow: inset 0px -7px 14px 0px rgba(0, 0, 0, 0.7882352941);
+  left: 4%;
   z-index: 2;
-  background: #064563;
-  border-radius: 50%;
-}
-.Home .logo img {
-  height: 7dvh;
+  top: 2%;
 }
 .Home .leftGrid {
   grid-template-rows: repeat(2, 1fr);
@@ -33,41 +24,53 @@
   align-items: center;
   gap: 20px;
   justify-content: center;
-  background: #063444;
+  background: #000;
+  animation-delay: 1s;
+  position: relative;
 }
-.Home .leftGrid .topLeftGrid .ServicesSection .topServices img {
-  width: 40px;
-  height: 40px;
+.Home .leftGrid .topLeftGrid .ServicesSection .topServices .TITLE {
+  z-index: 2;
 }
 .Home .leftGrid .topLeftGrid .ServicesSection .bottomServices {
   grid-template-columns: repeat(2, 1fr);
 }
 .Home .leftGrid .topLeftGrid .ServicesSection .bottomServices .list {
+  animation-delay: 1.4s;
   background: url("../media/backgrounds/bkk.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .Home .leftGrid .topLeftGrid .ServicesSection .bottomServices .list li {
+  gap: 1dvh;
   display: flex;
   align-items: center;
-  font-size: 1.5dvh;
-  margin: 0 15px 0 15px;
+  margin: 0 10px 0 10px;
   height: 25%;
 }
 .Home .leftGrid .topLeftGrid .ServicesSection .bottomServices .list li:not(:last-child) {
   border-bottom: 1px solid rgba(85, 84, 84, 0.3803921569);
 }
 .Home .leftGrid .topLeftGrid .ServicesSection .bottomServices .list li strong {
-  font-size: 1.8dvh;
   width: 20%;
 }
 .Home .leftGrid .topLeftGrid .ServicesSection .bottomServices .slideShow {
-  animation: backgrounds 30s linear forwards infinite;
+  background: url("../media/backgrounds/svs4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: 0.5s;
+  animation-delay: 1.2s;
 }
 .Home .leftGrid .topLeftGrid .workSection {
   background: url("../media/backgrounds/wk1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-delay: 1.6s;
+}
+.Home .leftGrid .topLeftGrid .workSection:hover {
+  background: url("../media/backgrounds/wk1b.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -80,21 +83,35 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation-delay: 2s;
+}
+.Home .leftGrid .btmLeftGrid .blogSection:hover {
+  background: url("../media/backgrounds/bg1b.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .Home .leftGrid .btmLeftGrid .aboutSection {
   background: url("../media/backgrounds/abt1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation-delay: 2.2s;
   position: relative;
   overflow: hidden;
+}
+.Home .leftGrid .btmLeftGrid .aboutSection:hover {
+  background: url("../media/backgrounds/abt1b.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .Home .leftGrid .btmLeftGrid .aboutSection:before {
   content: "";
   position: absolute;
   background: linear-gradient(to right, black, rgba(0, 0, 0, 0.726), transparent);
-  width: 30%;
   height: 100%;
+  width: 60%;
   left: 0;
   top: 0;
 }
@@ -102,7 +119,6 @@
   display: flex;
   position: relative;
   height: 15vh;
-  width: 8vw;
   top: 30%;
   overflow: hidden;
   left: 5%;
@@ -135,6 +151,13 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  animation-delay: 1.8s;
+}
+.Home .rightGrid .resourcesSection:hover {
+  background: url("../media/backgrounds/res1b.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .Home .rightGrid .contactSection {
   grid-template-columns: repeat(2, 1fr);
@@ -145,11 +168,25 @@
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+  animation-delay: 2.4s;
+}
+.Home .rightGrid .contactSection .contctLeft:hover {
+  background: url("../media/backgrounds/contact1b.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .Home .rightGrid .contactSection .contctRight {
   background: url("../media/backgrounds/contact2.jpg");
   background-size: cover;
   background-position: right;
+  background-repeat: no-repeat;
+  animation-delay: 2.6s;
+}
+.Home .rightGrid .contactSection .contctRight:hover {
+  background: url("../media/backgrounds/contact2b.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .Home .rightGrid .contactSection .contctLeft, .Home .rightGrid .contactSection .contctRight {
@@ -157,7 +194,6 @@
 }
 .Home .rightGrid .contactSection .bigText {
   position: absolute;
-  font-size: 6vw;
   color: black;
   top: 20%;
 }
@@ -168,17 +204,88 @@
   left: 0;
 }
 
+@media (min-width: 700px) {
+  .Home {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    overflow: hidden;
+    top: 11dvh;
+    height: 84dvh;
+  }
+  .Home .logo img {
+    height: 7dvh;
+  }
+  .Home .topServices img {
+    width: 40px;
+  }
+  .Home .rightGrid .contactSection .contctRight {
+    height: auto;
+  }
+  .Home .titleBox .title {
+    font-size: 2dvw;
+    line-height: 2dvw;
+    text-shadow: 3px 3px black;
+  }
+  .Home .contactSection .bigText {
+    font-size: 6dvw;
+  }
+  .Home .aboutSection .textCarousel {
+    width: 8vw;
+  }
+  .Home .list li {
+    font-size: 1.35dvh;
+    line-height: normal;
+  }
+  .Home .list li strong {
+    font-size: 1.5dvh;
+  }
+}
+@media (max-width: 699px) {
+  .Home {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    top: 8dvh;
+    height: 90dvh;
+  }
+  .Home .topServices img {
+    width: 30px;
+  }
+  .Home .leftGrid {
+    height: 45dvh;
+  }
+  .Home .logo img {
+    height: 5dvh;
+  }
+  .Home .rightGrid .contactSection {
+    height: 26dvh;
+  }
+  .Home .titleBox .title {
+    font-size: 2dvh;
+    line-height: 4dvw;
+  }
+  .Home .contactSection .bigText {
+    font-size: 10dvh;
+  }
+  .Home .aboutSection .textCarousel {
+    width: 14vw;
+  }
+  .Home .list li {
+    font-size: 0.9dvh;
+    line-height: 7px;
+  }
+  .Home .list li strong {
+    font-size: 1.2dvh;
+  }
+}
 .ServicesPage {
   display: flex;
-  padding: 3dvw 3dvw 3dvw 7dvw;
   width: 100dvw;
   height: 100dvh;
   gap: 3dvh;
 }
 .ServicesPage .categories {
   grid-template-columns: repeat(2, 1fr);
-  width: 40%;
-  height: 100%;
 }
 .ServicesPage .categories section {
   display: flex;
@@ -191,58 +298,52 @@
 }
 .ServicesPage .categories section article h3 {
   font-size: 2.5dvw;
-  margin-bottom: 30px;
   color: white;
   text-shadow: 2px 3px 1px black;
 }
 .ServicesPage .categories section .web {
-  margin-top: 50px;
   background: url("../media/backgrounds/web.jpg");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
+  animation-delay: 1s;
 }
 .ServicesPage .categories section .mobile {
   background: url("../media/backgrounds/mobile.gif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  animation-delay: 1.9s;
 }
 .ServicesPage .categories section .branding {
   background: url("../media/backgrounds/branding.gif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  animation-delay: 1.6s;
 }
 .ServicesPage .categories section .opt {
   background: url("../media/backgrounds/opt.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 50px;
+  animation-delay: 1.3s;
 }
 .ServicesPage .right {
-  width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .ServicesPage .right .information {
-  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
-  border: 1px solid #b5b5b5;
-  border-radius: 30px;
+  animation-delay: 0.5s;
 }
 .ServicesPage .right .information h1, .ServicesPage .right .information p {
   color: black;
   width: 80%;
 }
 .ServicesPage .right .information h1 {
-  font-size: 7dvh;
   text-transform: uppercase;
   font-family: montserratBold;
 }
@@ -252,23 +353,20 @@
 .ServicesPage .right .information .buttons {
   display: flex;
   align-items: center;
-  width: 80%;
-  gap: 30px;
-  margin-top: 30px;
+  width: 95%;
+  justify-content: center;
 }
 .ServicesPage .right .information .buttons .work {
   background: black;
   font-size: 13px;
+  height: 5dvh;
+  gap: 6px;
 }
 .ServicesPage .right .information .buttons .contct, .ServicesPage .right .information .buttons .work {
   position: relative;
-  height: 45px;
-  padding: 0 25px 0 13px;
   display: flex;
-  gap: 18px;
   cursor: pointer;
   text-transform: uppercase;
-  border-radius: 30px;
   border: 1px solid #6f6f6f;
   align-items: center;
   justify-content: center;
@@ -288,22 +386,134 @@
   position: absolute;
   left: 0;
   height: 100%;
-  width: 45px;
   border-radius: 50%;
   background: black;
 }
 .ServicesPage .right .information .buttons .contct img, .ServicesPage .right .information .buttons .work img {
-  width: 20px;
   z-index: 2;
 }
 .ServicesPage .right .information .buttons .contct h4, .ServicesPage .right .information .buttons .work h4 {
   z-index: 2;
-  font-size: 13px;
   font-family: montserratBold;
 }
 
+@media (min-width: 700px) {
+  .ServicesPage {
+    padding: 3dvw 3dvw 3dvw 7dvw;
+    flex-direction: row;
+  }
+  .ServicesPage .categories {
+    width: 40%;
+    height: 100%;
+  }
+  .ServicesPage .categories section .web {
+    margin-top: 50px;
+  }
+  .ServicesPage .categories section .opt {
+    margin-bottom: 50px;
+  }
+  .ServicesPage .categories section article h3 {
+    margin: 0 0 30px 0;
+  }
+  .ServicesPage .right {
+    width: 60%;
+    justify-content: center;
+  }
+  .ServicesPage .right .information {
+    height: 80%;
+    justify-content: center;
+    border-radius: 30px;
+    gap: 20px;
+    padding-bottom: 0;
+  }
+  .ServicesPage .right .information h1 {
+    font-size: 7dvh;
+  }
+  .ServicesPage .right .information .buttons {
+    gap: 4dvw;
+  }
+  .ServicesPage .right .information .buttons .contct, .ServicesPage .right .information .buttons .work {
+    height: 45px;
+    padding: 0 25px 0 13px;
+    gap: 18px;
+    border-radius: 30px;
+  }
+  .ServicesPage .right .information .buttons .contct::before, .ServicesPage .right .information .buttons .work::before {
+    width: 45px;
+  }
+  .ServicesPage .right .information .buttons .contct img, .ServicesPage .right .information .buttons .work img {
+    width: 20px;
+  }
+  .ServicesPage .right .information .buttons .contct h4, .ServicesPage .right .information .buttons .work h4 {
+    font-size: 13px;
+  }
+  .ServicesPage .right .information .buttons .work {
+    padding: 0 2dvw;
+  }
+  .border {
+    border-radius: 30px;
+  }
+}
+@media (max-width: 699px) {
+  .ServicesPage {
+    padding: 5dvh 3dvw 3dvw 3dvw;
+    flex-direction: column;
+  }
+  .ServicesPage .categories {
+    width: 100%;
+    height: 30dvh;
+  }
+  .ServicesPage .categories section .web {
+    margin-top: 1.2dvh;
+  }
+  .ServicesPage .categories section .opt {
+    margin-bottom: 1.2dvh;
+  }
+  .ServicesPage .categories section article h3 {
+    margin: 0 0 1dvh 1dvh;
+  }
+  .ServicesPage .right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .ServicesPage .right .information {
+    height: 90%;
+    justify-content: flex-end;
+    gap: 15px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+  }
+  .ServicesPage .right .information h1 {
+    font-size: 4dvh;
+  }
+  .ServicesPage .right .information .buttons {
+    gap: 3dvh;
+  }
+  .ServicesPage .right .information .buttons .contct, .ServicesPage .right .information .buttons .work {
+    height: 5dvh;
+    padding: 0 5dvw 0 4dvw;
+    gap: 4dvh;
+    border-radius: 20px;
+  }
+  .ServicesPage .right .information .buttons .contct::before, .ServicesPage .right .information .buttons .work::before {
+    width: 10dvw;
+  }
+  .ServicesPage .right .information .buttons .contct img, .ServicesPage .right .information .buttons .work img {
+    width: 2dvh;
+  }
+  .ServicesPage .right .information .buttons .contct h4, .ServicesPage .right .information .buttons .work h4 {
+    font-size: 8px;
+  }
+  .ServicesPage .right .information .buttons .work {
+    height: 5dvh;
+    padding: 0 5dvw;
+    gap: 6px;
+  }
+  .border {
+    border-radius: 15px;
+  }
+}
 .border {
-  border-radius: 30px;
   background: #1c1c1c;
   position: relative;
   transition: 0.3s;
@@ -332,145 +542,276 @@
   box-shadow: 6px 7px 8px 0px rgba(0, 0, 0, 0.380392);
 }
 
-.ContactPage {
-  display: flex;
+.contactMain {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.8fr;
   height: 100dvh;
-  align-items: end;
-  justify-content: space-evenly;
-  padding-bottom: 60px;
-  background: linear-gradient(45deg, #6c5ce7, #000);
-}
-.ContactPage .mailInfo {
-  position: absolute;
-  right: 10%;
-  top: 10dvh;
-}
-.ContactPage .contact {
-  display: flex;
+  background: white;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+.contactMain .left h1 {
+  left: 15%;
+  top: 20%;
+  animation-delay: 5s;
+}
+.contactMain article {
   width: 100%;
+  height: 65%;
 }
-
-form {
+.contactMain article h1 {
+  color: black;
+  font-size: 20dvh;
   position: absolute;
-  right: 10%;
-  width: 40%;
-  height: 50%;
-  top: 10dvh;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-form p {
-  margin-bottom: 40px;
-}
-
-.input-boxes {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.input-box {
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-
-label {
-  transform: translateY(-50%);
-  pointer-events: none;
-  color: #e5e5e5;
-  position: absolute;
-  font-size: 12px;
-  transition: 0.3s;
-  left: 5px;
-  bottom: -5px;
-}
-
-input {
-  background: linear-gradient(45deg, black, #342c6f);
   z-index: 2;
-  border-radius: 5px;
+  text-transform: uppercase;
+  animation: contactLoad 1s linear forwards;
+  font-family: droid;
+  opacity: 0;
+}
+.contactMain .b {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+}
+.contactMain .b video {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
-  height: 25px;
-  padding: 0 10px 0 10px;
-  color: #dadada;
-  font-size: 12px;
-  text-align: start;
-  outline: none;
+  height: 100%;
 }
-input:focus ~ label {
-  bottom: 20px;
+.contactMain .b .box {
+  position: absolute;
+  background: white;
+  mix-blend-mode: screen;
+  width: 100%;
+  height: 100%;
 }
-input:focus ~ #message {
-  top: -23px;
+.contactMain .b .box span {
+  background: black;
+  width: 90%;
+  height: 11%;
+  position: absolute;
+  border-radius: 10px;
+}
+.contactMain .b .box span:first-child {
+  width: 80%;
+  top: 0;
+  left: 0;
+  animation-delay: 1s;
+}
+.contactMain .b .box span:nth-child(3) {
+  top: 24%;
+  width: 70%;
+  left: 15%;
+  animation-delay: 2.2s;
+}
+.contactMain .b .box span:nth-child(5) {
+  top: 48%;
+  right: 0;
+  animation-delay: 2.8s;
+}
+.contactMain .b .box span:nth-child(8) {
+  top: 84%;
+  left: 10%;
+  width: 70%;
+  animation-delay: 3.8s;
+}
+.contactMain .b .box .row2 {
+  position: absolute;
+  top: 12%;
+  width: 90%;
+  height: 11%;
+  display: flex;
+  right: 0;
+  gap: 2%;
+}
+.contactMain .b .box .row2 .sp1 {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  animation-delay: 1.2s;
+}
+.contactMain .b .box .row2 .sp2 {
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  animation-delay: 1.4s;
+}
+.contactMain .b .box .row4 {
+  position: absolute;
+  top: 36%;
+  width: 90%;
+  height: 11%;
+  display: flex;
+  right: 0;
+  gap: 2%;
+}
+.contactMain .b .box .row4 .sp1 {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  animation-delay: 2.4s;
+}
+.contactMain .b .box .row4 .sp2 {
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  animation-delay: 2.6s;
+}
+.contactMain .b .box .row5 {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  height: 11%;
+  display: flex;
+  right: 0;
+  gap: 2%;
+}
+.contactMain .b .box .row5 .sp1 {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  animation-delay: 3s;
+}
+.contactMain .b .box .row5 .sp2 {
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 40%;
+  animation-delay: 3.2s;
+}
+.contactMain .b .box .row6 {
+  position: absolute;
+  top: 72%;
+  width: 80%;
+  height: 11%;
+  display: flex;
+  right: 0;
+  gap: 2%;
+}
+.contactMain .b .box .row6 .sp1 {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  animation-delay: 3.4s;
+}
+.contactMain .b .box .row6 .sp2 {
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 75%;
+  animation-delay: 3.6s;
+}
+.contactMain .b h1 {
+  left: 25%;
+  top: 30%;
+  animation-delay: 5.1s;
+  color: white;
+}
+.contactMain .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactMain .right h1 {
+  right: 10%;
+  bottom: 25%;
+  animation-delay: 5.3s;
+}
+.contactMain .right .contactIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contactMain .right .contactIcons img {
+  width: 5dvh;
+  height: 5dvh;
+  transition: 0.3s;
+}
+.contactMain .right .contactIcons img:hover {
+  width: 10dvh;
+  height: 10dvh;
+}
+.contactMain .right .contactIcons .ad {
+  animation-delay: 5.5s;
+}
+.contactMain .right .contactIcons .bd {
+  animation-delay: 6s;
+}
+.contactMain .right .contactIcons .cd {
+  animation-delay: 6.5s;
+}
+.contactMain .right .contactIcons .dd {
+  animation-delay: 7s;
 }
 
 .BlogPage {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #d0d1d6;
   grid-template-columns: 1.2fr 0.6fr 1.2fr;
   height: 100dvh;
-  padding: 15dvh 15dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.BlogPage .Left {
-  grid-template-rows: 0.8fr 1.2fr;
+.BlogPage main {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-.BlogPage .Left .topLeft {
-  width: 80%;
-  margin-left: 20%;
+.BlogPage section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80dvw;
+  height: 80dvh;
 }
-.BlogPage .Left .btmLeft {
-  grid-template-rows: repeat(2, 1fr);
+.BlogPage h1 {
+  color: black;
+  font-size: 20dvh;
+  position: absolute;
 }
-.BlogPage .Left .btmLeft .top {
-  grid-template-columns: 1.4fr 0.6fr;
+.BlogPage .phone {
+  width: 25%;
+  z-index: 2;
+  position: absolute;
 }
-.BlogPage .Left .btmLeft .btm {
-  width: 65%;
-  margin-left: 35%;
-  grid-template-columns: 1fr 0.5fr;
+.BlogPage .blogList {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
 }
-.BlogPage .Left .btmLeft .btm .b {
-  height: 80%;
+.BlogPage .blogList h4 {
+  font-size: 3dvh;
+  margin-bottom: 10px;
 }
-.BlogPage .Middle {
-  grid-template-rows: 0.8fr 1.2fr;
+.BlogPage .blogList ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-.BlogPage .Middle .btmMid {
-  grid-template-columns: 0.6fr 1.4fr;
-  height: 70%;
+.BlogPage .blogDetails {
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+  color: black;
 }
-.BlogPage .Middle .b {
-  grid-template-rows: 1.4fr 0.6fr;
+.BlogPage .date {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  color: black;
 }
-.BlogPage .Middle .c {
-  grid-template-rows: 0.4fr 0.6fr;
-}
-.BlogPage .Right {
-  grid-template-rows: 0.8fr 1.2fr;
-}
-.BlogPage .Right .topRight {
-  grid-template-rows: 1.4fr 0.6fr;
-}
-.BlogPage .Right .topRight .a {
-  width: 70%;
-}
-.BlogPage .Right .topRight .b {
-  grid-template-columns: 1.2fr 0.4fr 0.4fr;
-  width: 85%;
-}
-.BlogPage .Right .btmRight {
-  height: 84%;
-}
-.BlogPage .Right .btmRight .b {
-  width: 40%;
-}
-.BlogPage .Right .btmRight .c {
-  width: 20%;
+.BlogPage .author {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  color: black;
 }
 
 .WorkPage {
@@ -492,7 +833,6 @@ input:focus ~ #message {
   gap: 1.5dvh;
 }
 .WorkPage .projects .textCard {
-  height: 95%;
   background: black;
   border-radius: 30px;
   transition: 0.3s;
@@ -508,54 +848,84 @@ input:focus ~ #message {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+  animation-delay: 1s;
 }
 .WorkPage .projects .textCard:nth-child(2) {
   background: url("../media/backgrounds/projects/bigBite.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  animation-delay: 1.1s;
 }
 .WorkPage .projects .textCard:nth-child(3) {
   background: url("../media/backgrounds/projects/decor.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  animation-delay: 1.2s;
 }
 .WorkPage .projects .textCard:nth-child(4) {
   background: url("../media/backgrounds/projects/foodlens.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  animation-delay: 1.3s;
 }
 .WorkPage .projects .textCard:nth-child(5) {
   background: url("../media/backgrounds/projects/gears.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  animation-delay: 1.4s;
 }
 .WorkPage .projects .textCard:nth-child(6) {
   background: url("../media/backgrounds/projects/kiiqx.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  animation-delay: 1.5s;
 }
 .WorkPage .projects .textCard:nth-child(7) {
   background: url("../media/backgrounds/projects/pixelMind.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  animation-delay: 1.6s;
 }
 .WorkPage .projects .textCard:nth-child(8) {
   background: url("../media/backgrounds/projects/tuneflix.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  animation-delay: 1.7s;
 }
 .WorkPage .projects .textCard:nth-child(9) {
   background: url("../media/backgrounds/projects/walls.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  animation-delay: 1.8s;
+}
+.WorkPage .projects .textCard:nth-child(10) {
+  background: url("../media/backgrounds/projects/walls.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  animation-delay: 1.9s;
+}
+.WorkPage .projects .textCard:nth-child(11) {
+  background: url("../media/backgrounds/projects/walls.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  animation-delay: 2s;
+}
+.WorkPage .projects .textCard:nth-child(12) {
+  background: url("../media/backgrounds/projects/walls.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  animation-delay: 2.1s;
 }
 .WorkPage .projects .textCard h2, .WorkPage .projects .textCard p {
   background: #2d2c2c;
@@ -585,6 +955,7 @@ input:focus ~ #message {
   position: relative;
   width: 53%;
   overflow: hidden;
+  animation-delay: 1.5s;
 }
 .WorkPage .details .banner video {
   position: absolute;
@@ -602,13 +973,25 @@ input:focus ~ #message {
   font-size: 15dvw;
   line-height: 21dvh;
   mix-blend-mode: screen;
+  padding-left: 20px;
   width: 100%;
   height: 46dvh;
-  font-family: Bobagum;
+  font-family: droid;
   color: black;
 }
+.WorkPage .details span {
+  position: relative;
+  border-radius: 30px;
+  width: 25%;
+  height: 100%;
+}
 .WorkPage .details .a {
+  display: flex;
+  padding: 3dvh;
+  flex-direction: column;
+  justify-content: center;
   background: #848199;
+  animation-delay: 0.3s;
 }
 .WorkPage .details .a::after {
   content: "";
@@ -631,18 +1014,6 @@ input:focus ~ #message {
   border-radius: 30px;
   top: 0;
 }
-.WorkPage .details span {
-  position: relative;
-  border-radius: 30px;
-  width: 25%;
-  height: 100%;
-}
-.WorkPage .details .a {
-  display: flex;
-  padding: 3dvh;
-  flex-direction: column;
-  justify-content: center;
-}
 .WorkPage .details .a h1 {
   position: absolute;
   font-size: 5dvw;
@@ -664,7 +1035,7 @@ input:focus ~ #message {
 }
 .WorkPage .details .a h5 {
   padding: 5px 8px;
-  border: 1px solid gray;
+  border: 1px solid #bfbfbf;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 20px;
@@ -683,6 +1054,7 @@ input:focus ~ #message {
 .WorkPage .details .b {
   position: relative;
   overflow: hidden;
+  animation-delay: 0.5s;
   display: flex;
   flex-direction: column;
   border-radius: 0;
@@ -789,7 +1161,7 @@ input:focus ~ #message {
   height: 100dvh;
   justify-content: center;
   align-items: end;
-  margin-right: 3dvw;
+  margin: 0 3dvw 0 15dvh;
   gap: 3dvh;
 }
 .AboutPage .vision {
@@ -804,7 +1176,7 @@ input:focus ~ #message {
   background-size: cover;
   height: 55dvh;
   border-radius: 30px;
-  width: 90dvw;
+  animation-delay: 1.2s;
   align-items: center;
   overflow: hidden;
 }
@@ -954,6 +1326,7 @@ input:focus ~ #message {
   font-size: 8dvh;
   text-align: end;
   color: black;
+  animation-delay: 2.2s;
 }
 .AboutPage .devTeam .team {
   display: flex;
@@ -964,7 +1337,6 @@ input:focus ~ #message {
 }
 .AboutPage .devTeam .team .textCard {
   display: flex;
-  height: 100%;
   border-radius: 30px;
   overflow: hidden;
   flex-direction: column;
@@ -977,21 +1349,25 @@ input:focus ~ #message {
   background: url("../media/backgrounds/profiles/ceo1.jpg");
   background-position: center;
   background-size: cover;
+  animation-delay: 0.4s;
 }
 .AboutPage .devTeam .team .textCard:nth-child(2) {
   background: url("../media/backgrounds/profiles/ceo2.jpg");
   background-position: center;
   background-size: cover;
+  animation-delay: 0.5s;
 }
 .AboutPage .devTeam .team .textCard:nth-child(3) {
   background: url("../media/backgrounds/profiles/ceo3.jpg");
   background-position: center;
   background-size: cover;
+  animation-delay: 0.6s;
 }
 .AboutPage .devTeam .team .textCard:nth-child(4) {
   background: url("../media/backgrounds/profiles/ceo4.jpg");
   background-position: center;
   background-size: cover;
+  animation-delay: 0.7s;
 }
 .AboutPage .devTeam .team .textCard h2 {
   font-size: 20px;
@@ -1014,6 +1390,7 @@ input:focus ~ #message {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
+  animation-delay: 1s;
 }
 .AboutPage .devTeam .combinedStack img {
   height: 45px;
@@ -1025,10 +1402,9 @@ input:focus ~ #message {
 }
 
 .unveiled {
-  width: 30dvw;
   filter: brightness(1);
   box-shadow: 6px 7px 8px 0px rgba(0, 0, 0, 0.3803921569);
-  width: 36dvw;
+  width: 100%;
 }
 
 .ResourcesPage {
@@ -1036,22 +1412,57 @@ input:focus ~ #message {
   height: 96dvh;
   margin: 2dvh;
 }
-.ResourcesPage .top {
-  grid-template-columns: 1.6fr 0.4fr;
-}
-.ResourcesPage .bottom {
-  grid-template-columns: 1.2fr 0.6fr 1.2fr;
-}
-.ResourcesPage .bottom .btmLeft {
-  grid-template-columns: repeat(2, 1fr);
-}
-.ResourcesPage .bottom .btmLeft .left {
-  grid-template-rows: 1.4fr 0.6fr;
-}
-.ResourcesPage .bottom .btmMid {
-  grid-template-rows: 1.4fr 0.6fr;
-}
 
+@keyframes elementsBlurIn {
+  from {
+    opacity: 0;
+    top: 5%;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    top: 0;
+    transform: scale(1);
+  }
+}
+@keyframes elementBlurIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes elementsGrowIn {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes elementsWidthIn {
+  from {
+    left: -50%;
+    width: 0;
+  }
+  to {
+    left: 0;
+    width: 100%;
+  }
+}
+@keyframes contactLoad {
+  from {
+    opacity: 0;
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 @keyframes onn {
   0% {
     display: none;
@@ -1369,7 +1780,7 @@ input:focus ~ #message {
 @keyframes menuHide {
   0% {
     display: flex;
-    height: 60dvh;
+    height: 65dvh;
   }
   99% {
     display: flex;
@@ -1391,7 +1802,7 @@ input:focus ~ #message {
   }
   100% {
     display: flex;
-    height: 60dvh;
+    height: 65dvh;
   }
 }
 @keyframes hideIT {
@@ -1414,6 +1825,26 @@ input:focus ~ #message {
     height: 18px;
   }
 }
+.blurdIn {
+  opacity: 0;
+  animation: elementBlurIn 0.8s ease-in-out forwards;
+}
+
+.blurIn {
+  opacity: 0;
+  animation: elementsBlurIn 0.8s ease-in-out forwards;
+}
+
+.inView {
+  height: 0;
+  animation: elementsGrowIn 0.8s ease-in-out forwards;
+}
+
+.widthIn {
+  width: 0;
+  animation: elementsWidthIn 0.8s ease-in-out forwards;
+}
+
 .showMenu {
   animation: menuShow 0.5s ease-out forwards;
 }
@@ -1439,13 +1870,11 @@ input:focus ~ #message {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 43px;
   background: #1c1c1c;
   position: absolute;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.2s;
-  top: 15dvh;
   left: 2dvw;
 }
 .navigation::before {
@@ -1512,12 +1941,9 @@ input:focus ~ #message {
 .backButton {
   position: fixed;
   z-index: 2;
-  padding: 10px;
   border-radius: 50%;
-  width: 43px;
   cursor: pointer;
   transition: 0.5s;
-  top: 5dvh;
   left: 2dvw;
   box-shadow: inset 6px 0px 8px 0px rgba(0, 0, 0, 0.568627451);
   background: rgba(88, 112, 133, 0.72);
@@ -1526,31 +1952,107 @@ input:focus ~ #message {
   background: rgba(25, 59, 88, 0.72);
 }
 
+@media (min-width: 700px) {
+  .backButton {
+    padding: 8px;
+    width: 3dvw;
+    top: 10dvh;
+  }
+  .navigation {
+    width: 3dvw;
+    top: 20dvh;
+  }
+  .grid {
+    display: grid;
+    gap: 1.5dvh;
+  }
+}
+@media (max-width: 699px) {
+  .backButton {
+    padding: 5px;
+    width: 5vw;
+  }
+  .navigation {
+    width: 5dvw;
+    top: 12dvh;
+  }
+  .grid {
+    display: grid;
+    gap: 1.5dvh;
+  }
+}
+@media (max-width: 399px) {
+  .backButton {
+    padding: 6px;
+    width: 8dvw;
+    top: 1dvh;
+  }
+  .navigation {
+    width: 9dvw;
+    top: 7dvh;
+  }
+  .grid {
+    display: grid;
+    gap: 1dvh;
+  }
+}
 .dropdownArrow {
   transform: rotate(-450deg) scale(0.94);
 }
 
-.overlay {
+.blocks-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.row {
+  flex: 1;
+  width: 100%;
+  display: flex;
+}
+
+.block {
   position: relative;
+  flex: 1;
+  background: black;
+  margin: -0.25px;
+}
+
+.transition-in .block {
+  transform-origin: top;
+}
+
+.transition-out .block {
+  transform-origin: bottom;
+}
+
+.ctn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: black;
   height: 100dvh;
   width: 100dvw;
-  box-shadow: 0px -11px 14px 20px black;
-  animation: closeOverlay 0.5s ease-out forwards;
-  animation-delay: 1s;
-  gap: 7px;
-  transition: 0.3s;
-  z-index: 5;
+  position: fixed;
+  z-index: 6;
+  pointer-events: none;
+  gap: 10px;
+  top: 0;
+  left: 0;
 }
-.overlay img {
-  width: 25px;
-}
-.overlay h1 {
+.ctn .pageText {
   color: #1de8f1;
   font-size: 30px;
+}
+.ctn .pageImg {
+  display: flex;
+  width: 25px;
 }
 
 .off {
@@ -1590,11 +2092,6 @@ input:focus ~ #message {
   font-weight: 700;
 }
 
-.grid {
-  display: grid;
-  gap: 1.5dvh;
-}
-
 .shape {
   border-radius: 15px;
   background: #1c1c1c;
@@ -1604,6 +2101,14 @@ input:focus ~ #message {
 }
 .shape:hover {
   margin: 5px;
+}
+.shape:hover .titleBox .title {
+  transition: 0.3s;
+  font-size: 5dvh;
+  line-height: 3dvw;
+}
+.shape:hover img {
+  filter: blur(4px);
 }
 
 .titleBox {
@@ -1769,108 +2274,14 @@ input:focus ~ #message {
   src: url("../font/Montserrat-Thin.ttf");
 }
 @font-face {
-  font-family: Bobagum;
-  src: url("../font/SuperMilk.ttf");
+  font-family: droid;
+  src: url("../font/android_7.ttf");
 }
 body {
   background: #d0d1d6;
 }
 
-.welcomeAnimation {
-  position: absolute;
-  display: flex;
-  width: 100dvw;
-  height: 100dvh;
-  background: white;
-  z-index: 10;
-  left: 0;
-  top: 0;
-  align-items: center;
-  justify-content: center;
-  font-size: 3vw;
-  font-weight: 500;
-  animation: introOff 3s ease-out forwards;
-  animation-delay: 13s;
-}
-.welcomeAnimation .logoBox {
-  height: 10dvh;
-  position: relative;
-  margin: 0 15px 0 60px;
-}
-.welcomeAnimation .logoBox .circle {
-  display: flex;
-  width: 5dvw;
-  top: -50%;
-  left: -90%;
-  background: linear-gradient(74deg, #A8D9EA, #262262, #01002f);
-  position: absolute;
-  height: 12dvh;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  animation: cirCle 2s ease-in-out forwards;
-}
-.welcomeAnimation .logoBox .circle .midCircle {
-  width: 2.5dvw;
-  height: 6dvh;
-  background: white;
-  border-radius: 50% 0;
-}
-.welcomeAnimation .logoBox .circle:before, .welcomeAnimation .logoBox .circle:after {
-  position: absolute;
-  content: "";
-  background: white;
-}
-.welcomeAnimation .logoBox .circle:before {
-  width: 3vw;
-  height: 130px;
-  top: -10%;
-  right: -27%;
-}
-.welcomeAnimation .logoBox .circle:after {
-  width: 75px;
-  transform: rotate(90deg);
-  height: 100px;
-  top: 38%;
-  left: -35%;
-}
-.welcomeAnimation .logoBox .coat {
-  position: relative;
-  bottom: -50%;
-  width: 1.4dvw;
-  height: 5.5dvh;
-}
-.welcomeAnimation .logoBox .i {
-  position: relative;
-  width: 1.4dvw;
-  background: linear-gradient(to right, #A8D9EA, #262262, #01002f);
-  height: 5.5dvh;
-  animation: intro 3.5s ease-in-out forwards;
-  transition: 0.3s;
-}
-.welcomeAnimation .logoBox .i:before, .welcomeAnimation .logoBox .i:after {
-  position: absolute;
-  content: "";
-}
-.welcomeAnimation .logoBox .i:before {
-  width: 1.4dvw;
-  background: linear-gradient(to right, #A8D9EA, #262262, #01002f);
-  height: 2.4dvh;
-  z-index: 2;
-  transition: 0.3s;
-  animation: dot 1s linear forwards;
-  top: -65%;
-}
-.welcomeAnimation .logoBox .i:after {
-  background: white;
-  width: 2dvw;
-  height: 6dvh;
-  bottom: -68%;
-  left: -55%;
-  transform: rotate(-45deg);
-}
-.welcomeAnimation .mainName {
+.mainName {
   position: relative;
   color: #202202;
   opacity: 0;
@@ -1878,22 +2289,22 @@ body {
   font-family: montserratReg;
   animation: show 2.5s linear forwards;
 }
-.welcomeAnimation .mainName:nth-child(1) {
+.mainName:nth-child(1) {
   animation-delay: 4s;
 }
-.welcomeAnimation .mainName:nth-child(2) {
+.mainName:nth-child(2) {
   animation-delay: 4.5s;
 }
-.welcomeAnimation .mainName:nth-child(3) {
+.mainName:nth-child(3) {
   animation-delay: 5s;
 }
-.welcomeAnimation .mainName:nth-child(4) {
+.mainName:nth-child(4) {
   animation-delay: 5.5s;
 }
-.welcomeAnimation .mainName:nth-child(5) {
+.mainName:nth-child(5) {
   animation-delay: 6s;
 }
-.welcomeAnimation .mainName:nth-child(6) {
+.mainName:nth-child(6) {
   animation-delay: 6.5s;
 }
 
@@ -1919,4 +2330,182 @@ body {
 }
 .agencyMoto .Name:nth-child(3) {
   animation-delay: 10s;
+}
+
+.welcomeAnimation {
+  position: absolute;
+  display: flex;
+  width: 100dvw;
+  height: 100dvh;
+  background: white;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  font-weight: 500;
+  animation: introOff 3s ease-out forwards;
+  animation-delay: 13s;
+}
+.welcomeAnimation .logoBox {
+  height: 10dvh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.welcomeAnimation .logoBox .circle {
+  display: flex;
+  background: linear-gradient(74deg, #A8D9EA, #262262, #01002f);
+  position: absolute;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  animation: cirCle 2s ease-in-out forwards;
+}
+.welcomeAnimation .logoBox .circle:before {
+  top: -10%;
+}
+.welcomeAnimation .logoBox .circle:after {
+  width: 10dvw;
+  height: 12dvh;
+  top: 54%;
+  left: -35%;
+}
+.welcomeAnimation .logoBox .circle:before, .welcomeAnimation .logoBox .circle:after {
+  position: absolute;
+  content: "";
+  background: white;
+}
+.welcomeAnimation .logoBox .circle .midCircle {
+  background: white;
+  border-radius: 50% 0;
+}
+.welcomeAnimation .logoBox .coat {
+  position: relative;
+  bottom: -50%;
+  height: 5.5dvh;
+}
+.welcomeAnimation .logoBox .coat .i {
+  position: relative;
+  background: linear-gradient(to right, #A8D9EA, #262262, #01002f);
+  animation: intro 3.5s ease-in-out forwards;
+  transition: 0.3s;
+}
+.welcomeAnimation .logoBox .coat .i:before {
+  width: 1.4dvw;
+  background: linear-gradient(to right, #A8D9EA, #262262, #01002f);
+  height: 2.4dvh;
+  z-index: 2;
+  transition: 0.3s;
+  animation: dot 1s linear forwards;
+}
+.welcomeAnimation .logoBox .coat .i:after {
+  background: white;
+  transform: rotate(-45deg);
+}
+.welcomeAnimation .logoBox .coat .i:before, .welcomeAnimation .logoBox .coat .i:after {
+  position: absolute;
+  content: "";
+}
+
+@media (min-width: 700px) {
+  .welcomeAnimation .logoBox {
+    width: 3dvw;
+  }
+  .welcomeAnimation .logoBox .circle {
+    width: 6dvw;
+    top: -50%;
+    left: -25%;
+    height: 11.5dvh;
+  }
+  .welcomeAnimation .logoBox .circle:before {
+    width: 3vw;
+    height: 15dvh;
+    right: -8%;
+  }
+  .welcomeAnimation .logoBox .circle .midCircle {
+    width: 3dvw;
+    height: 5dvh;
+  }
+  .welcomeAnimation .logoBox .coat {
+    width: 1.4dvw;
+  }
+  .welcomeAnimation .logoBox .coat .i {
+    height: 5.5dvh;
+    width: 1.4dvw;
+    top: 0;
+  }
+  .welcomeAnimation .logoBox .coat .i::before {
+    width: 100%;
+    height: 2dvh;
+    top: -65%;
+  }
+  .welcomeAnimation .logoBox .coat .i::after {
+    width: 2dvw;
+    height: 7dvh;
+    bottom: -68%;
+    left: -55%;
+  }
+}
+@media (max-width: 699px) {
+  .mainName {
+    font-size: 3.5dvh;
+  }
+  .welcomeAnimation .logoBox {
+    width: 12dvw;
+  }
+  .welcomeAnimation .logoBox .circle {
+    width: 16dvw;
+    top: -25%;
+    left: 20%;
+    height: 8dvh;
+  }
+  .welcomeAnimation .logoBox .circle:before {
+    width: 7vw;
+    height: 7dvh;
+    right: -4%;
+    height: 12dvh;
+  }
+  .welcomeAnimation .logoBox .circle .midCircle {
+    width: 8.5dvw;
+    height: 4dvh;
+    width: 8.5dvw;
+    height: 4dvh;
+  }
+  .welcomeAnimation .logoBox .circle:after {
+    width: 12dvw;
+    height: 8dvh;
+    top: 54%;
+    left: -4%;
+  }
+  .welcomeAnimation .logoBox .coat {
+    bottom: -70%;
+    width: 3.5dvw;
+    right: -30%;
+  }
+  .welcomeAnimation .logoBox .coat .i {
+    height: 4dvh;
+    width: 100%;
+    top: -40%;
+  }
+  .welcomeAnimation .logoBox .coat .i::before {
+    width: 100%;
+    height: 2dvh;
+    top: -75%;
+  }
+  .welcomeAnimation .logoBox .coat .i::after {
+    width: 5dvw;
+    height: 8dvh;
+    bottom: -100%;
+    left: -21%;
+    height: 5dvh;
+    bottom: -59%;
+    left: -52%;
+  }
+  .agencyMoto {
+    font-size: 1dvh;
+  }
 }/*# sourceMappingURL=style.css.map */

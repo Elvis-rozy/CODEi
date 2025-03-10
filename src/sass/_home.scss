@@ -76,13 +76,6 @@
         background-position: center;
         background-repeat: no-repeat;
         animation-delay: 1.6s;
-
-        &:hover {
-          background: url("../media/backgrounds/wk1b.jpg");
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
       }
     }
 
@@ -95,13 +88,6 @@
         background-position: center;
         background-repeat: no-repeat;
         animation-delay: 2s;
-        
-        &:hover {
-          background: url("../media/backgrounds/bg1b.jpg");
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
       }
       
       .aboutSection {
@@ -112,13 +98,6 @@
         animation-delay: 2.2s;
         position: relative;
         overflow: hidden;
-
-        &:hover {
-          background: url("../media/backgrounds/abt1b.jpg");
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
 
         &:before {
           content: "";
@@ -133,8 +112,6 @@
         .textCarousel {
           display: flex;
           position: relative;
-          height: 15vh;
-          top: 30%;
           overflow: hidden;
           left: 5%;
 
@@ -148,14 +125,12 @@
 
           .textCard {
             height: 15vh;
-            width: 8vw;
             display: flex;
             flex-direction: column;
 
             h2 { font-size: 3.3dvw; }
 
             p {
-              width: 8vw;
               font-size: 9px;
             }
           }
@@ -164,70 +139,42 @@
     }
   }
 
-  .rightGrid {
-    grid-template-rows: 1fr 1.8fr;
+  .bottomServices, .workSection, .blogSection, .aboutSection, .contactSection .contctLeft, .contactSection .contctRight {
+    &:hover {
+      filter: brightness(0.5) grayscale(1);
+    }
+  }
 
-    .resourcesSection {
-      background: url("../media/backgrounds/res1.jpg");
+  .contactSection {
+    grid-template-columns: repeat(2, 1fr);
+    color: black;
+
+    .contctLeft {
+      background: url("../media/backgrounds/contact1.jpg");
       background-size: cover;
       background-position: center;
-      position: relative;
-      animation-delay: 1.8s;
-
-      &:hover {
-        background: url("../media/backgrounds/res1b.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
+      background-repeat: no-repeat;
+      animation-delay: 2.4s;
     }
 
-    .contactSection {
-      grid-template-columns: repeat(2, 1fr);
+    .contctRight {
+      background: url("../media/backgrounds/contact2.jpg");
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+      animation-delay: 2.6s;
+    }
+
+    .contctLeft, .contctRight { filter: brightness(0.9); }
+
+    .bigText {
+      position: absolute;
       color: black;
-
-      .contctLeft {
-        background: url("../media/backgrounds/contact1.jpg");
-        background-size: cover;
-        background-position: left;
-        background-repeat: no-repeat;
-        animation-delay: 2.4s;
-
-        &:hover {
-          background: url("../media/backgrounds/contact1b.jpg");
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
-      }
-
-      .contctRight {
-        background: url("../media/backgrounds/contact2.jpg");
-        background-size: cover;
-        background-position: right;
-        background-repeat: no-repeat;
-        animation-delay: 2.6s;
-
-        &:hover {
-          background: url("../media/backgrounds/contact2b.jpg");
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
-      }
-
-      .contctLeft, .contctRight { filter: brightness(0.9); }
-
-      .bigText {
-        position: absolute;
-        color: black;
-        top: 20%;
-      }
-
-      .a { right: 0; }
-
-      .b { left: 0; }
     }
+
+    .a { right: 0; }
+
+    .b { left: 0; }
   }
 }
 
@@ -261,10 +208,21 @@
 
     .contactSection .bigText {
       font-size: 6dvw;
+      top: 43%;
     }
 
     .aboutSection .textCarousel {
+      height: 15vh;
+      top: 30%;
       width: 8vw;
+
+      .textCard {
+        width: 8vw;
+
+        p {
+          width: 8vw;
+        }
+      }
     }
 
     .list li {
@@ -276,6 +234,14 @@
       }
     }
   }
+
+  .shape:hover {
+    
+    .titleBox .title {
+      font-size: 5dvh;
+      line-height: 3dvw;
+    }
+  }
 }
 //Phone
 @media (max-width: (699px)) {
@@ -283,23 +249,23 @@
     display: flex;
     flex-direction: column;
     overflow: scroll;
-    top: 8dvh;
-    height: 90dvh;
+    top: 7dvh;
+    height: 91dvh;
 
     .topServices img {
       width: 30px;
     }
 
     .leftGrid {
-      height: 45dvh;
+      height: 50dvh;
     }
 
     .logo {
-      img { height: 5dvh; }
+      img { height: 4dvh; }
     }
 
-    .rightGrid .contactSection {
-      height: 26dvh;
+    .contactSection {
+      height: -webkit-fill-available;
     }
 
     .titleBox .title {
@@ -309,10 +275,21 @@
 
     .contactSection .bigText {
       font-size: 10dvh;
+      top: 37%;
     }
 
     .aboutSection .textCarousel {
-      width: 14vw;
+      width: 25vw;
+      height: 8vh;
+      top: 37%;
+
+      .textCard {
+        width: 25vw;
+
+        p {
+          width: 25vw;
+        }
+      }
     }
 
     .list li {
@@ -322,6 +299,14 @@
       strong {
         font-size: 1.2dvh;
       }
+    }
+  }
+
+  .shape:hover {
+    
+    .titleBox .title {
+      font-size: 3dvh;
+      line-height: 7dvw;
     }
   }
 }

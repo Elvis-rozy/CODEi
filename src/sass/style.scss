@@ -4,7 +4,6 @@
 @import "blog";
 @import "work";
 @import "about";
-@import "resources";
 @import "animations";
 @import "global";
 
@@ -54,6 +53,11 @@
 
 body {
   background: #d0d1d6;
+  height: 100dvh;
+}
+
+.page {
+  height: 100dvh;
 }
 
 .mainName {

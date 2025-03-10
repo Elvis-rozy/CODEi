@@ -45,6 +45,7 @@
   border-radius: 30px;
   cursor: pointer;
   transition: 0.2s;
+  z-index: 22;
   left: 2dvw;
 
   &::before {
@@ -123,21 +124,14 @@
   border-radius: 50%;
   cursor: pointer;
   transition: .5s;
-  left: 2dvw;
-  box-shadow: inset 6px 0px 8px 0px #00000091;
-  background: rgb(88 112 133 / 72%);
-
-  &:hover {
-    background: rgb(25 59 88 / 72%);
-  }
 }
 
 //Desktop
 @media (min-width: (700px)) {
   .backButton {
-    padding: 8px;
-    width: 3dvw;
+    width: 2.5dvw;
     top: 10dvh;
+    left: 2.2dvw;
   }
   .navigation {
     width: 3dvw;
@@ -148,6 +142,7 @@
     display: grid;
     gap: 1.5dvh;
   }
+  
 
 }
 //Tablet
@@ -155,6 +150,7 @@
   .backButton {
     padding: 5px;
     width: 5vw;
+    left: 2.2dvw;
   }
   .navigation {
     width: 5dvw;
@@ -163,19 +159,24 @@
 
   .grid {
     display: grid;
-    gap: 1.5dvh;
+    gap: 1dvh;
   }
 
 }
 //Phone
 @media (max-width: (399px)) {
+  .Home .leftGrid .topLeftGrid {
+    height: 25dvh;
+  }
+
   .backButton {
     padding: 6px;
     width: 8dvw;
-    top: 1dvh;
+    top: 2dvh;
+    left: 3dvw;
   }
   .navigation {
-    width: 9dvw;
+    width: 10dvw;
     top: 7dvh;
   }
 
@@ -297,8 +298,6 @@
     
     .titleBox .title {
       transition: .3s;
-      font-size: 5dvh;
-      line-height: 3dvw;
     }
 
     img {

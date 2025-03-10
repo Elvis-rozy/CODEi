@@ -17,21 +17,6 @@ const ceo1Obj = {
   degreeB : "ghshgdfgd fghdfgdfgdfgdfg",
   experience : "lorem lorem lorrem relm fsdvghdfghjkhdfklghkl sdfhjklhgjkfsdgdfhg bdfghshgdfgd fghdfgdfgdfgdfg",
   backgroundImage : ceo1,
-  stkPic : [
-    {class: "a", picName: "html", picLink: "./media/logo-icons/html.png"},
-    {class: "b", picName: "css", picLink: "./media/logo-icons/css.png"},
-    {class: "c", picName: "javaScript", picLink: "./media/logo-icons/js.png"},
-    {class: "d", picName: "agile", picLink: "./media/logo-icons/agile.png"},
-    {class: "e", picName: "API", picLink: "./media/logo-icons/api.jpeg"},
-    {class: "f", picName: "figma", picLink: "./media/logo-icons/figma.png"},
-    {class: "g", picName: "Git", picLink: "./media/logo-icons/git.png"},
-    {class: "h", picName: "database", picLink: "./media/logo-icons/db.jpeg"},
-    {class: "i", picName: "mongoDB", picLink: "./media/logo-icons/mongodb.png"},
-    {class: "j", picName: "mySQL", picLink: "./media/logo-icons/mysql.png"},
-    {class: "k", picName: "python", picLink: "./media/logo-icons/python.jpeg"},
-    {class: "l", picName: "aws", picLink: "./media/logo-icons/aws.svg"},
-    {class: "m", picName: "django", picLink: "./media/logo-icons/django.svg"}
-  ],
   contactLinks : [
     {name : "twitter", link: "", linkIcon : "./media/logo-icons/twitter-x.svg"},
     {name : "github", link: "", linkIcon : "./media/logo-icons/github.svg"},
@@ -46,22 +31,6 @@ const ceo1Obj = {
   degreeB : "ghshgdfgd fghdfgdfgdfgdfg",
   experience : "lorem lorem lorrem relm fsdvghdfghjkhdfklghkl sdfhjklhgjkfsdgdfhg bdfghshgdfgd fghdfgdfgdfgdfg",
   backgroundImage : ceo2,
-  hobbies : "ghshgdfgd fghdfgdfgdfgdfg",
-  stkPic : [
-    {class: "a", picName: "html", picLink: "./media/logo-icons/html.png"},
-    {class: "b", picName: "css", picLink: "./media/logo-icons/css.png"},
-    {class: "c", picName: "javaScript", picLink: "./media/logo-icons/js.png"},
-    {class: "d", picName: "agile", picLink: "./media/logo-icons/agile.png"},
-    {class: "e", picName: "API", picLink: "./media/logo-icons/api.jpeg"},
-    {class: "f", picName: "figma", picLink: "./media/logo-icons/figma.png"},
-    {class: "g", picName: "Git", picLink: "./media/logo-icons/git.png"},
-    {class: "h", picName: "database", picLink: "./media/logo-icons/db.jpeg"},
-    {class: "i", picName: "mongoDB", picLink: "./media/logo-icons/mongodb.png"},
-    {class: "j", picName: "mySQL", picLink: "./media/logo-icons/mysql.png"},
-    {class: "k", picName: "python", picLink: "./media/logo-icons/python.jpeg"},
-    {class: "l", picName: "aws", picLink: "./media/logo-icons/aws.svg"},
-    {class: "m", picName: "django", picLink: "./media/logo-icons/django.svg"}
-  ],
   contactLinks : [
     {name : "twitter", link: "", linkIcon : "./media/logo-icons/twitter-x.svg"},
     {name : "github", link: "", linkIcon : "./media/logo-icons/github.svg"},
@@ -76,22 +45,6 @@ const ceo1Obj = {
   degreeB : "ghshgdfgd fghdfgdfgdfgdfg",
   experience : "lorem lorem lorrem relm fsdvghdfghjkhdfklghkl sdfhjklhgjkfsdgdfhg bdfghshgdfgd fghdfgdfgdfgdfg",
   backgroundImage : ceo3,
-  hobbies : "ghshgdfgd fghdfgdfgdfgdfg",
-  stkPic : [
-    {class: "a", picName: "html", picLink: "./media/logo-icons/html.png"},
-    {class: "b", picName: "css", picLink: "./media/logo-icons/css.png"},
-    {class: "c", picName: "javaScript", picLink: "./media/logo-icons/js.png"},
-    {class: "d", picName: "agile", picLink: "./media/logo-icons/agile.png"},
-    {class: "e", picName: "API", picLink: "./media/logo-icons/api.jpeg"},
-    {class: "f", picName: "figma", picLink: "./media/logo-icons/figma.png"},
-    {class: "g", picName: "Git", picLink: "./media/logo-icons/git.png"},
-    {class: "h", picName: "database", picLink: "./media/logo-icons/db.jpeg"},
-    {class: "i", picName: "mongoDB", picLink: "./media/logo-icons/mongodb.png"},
-    {class: "j", picName: "mySQL", picLink: "./media/logo-icons/mysql.png"},
-    {class: "k", picName: "python", picLink: "./media/logo-icons/python.jpeg"},
-    {class: "l", picName: "aws", picLink: "./media/logo-icons/aws.svg"},
-    {class: "m", picName: "django", picLink: "./media/logo-icons/django.svg"}
-  ],
   contactLinks : [
     {name : "twitter", link: "", linkIcon : "./media/logo-icons/twitter-x.svg"},
     {name : "github", link: "", linkIcon : "./media/logo-icons/github.svg"},
@@ -106,28 +59,30 @@ const ceo1Obj = {
   degreeB : "ghshgdfgd fghdfgdfgdfgdfg",
   experience : "lorem lorem lorrem relm fsdvghdfghjkhdfklghkl sdfhjklhgjkfsdgdfhg bdfghshgdfgd fghdfgdfgdfgdfg",
   backgroundImage : ceo4,
-  hobbies : "ghshgdfgd fghdfgdfgdfgdfg",
-  stkPic : [
-    {class: "a", picName: "html", picLink: "./media/logo-icons/html.png"},
-    {class: "b", picName: "css", picLink: "./media/logo-icons/css.png"},
-    {class: "c", picName: "javaScript", picLink: "./media/logo-icons/js.png"},
-    {class: "d", picName: "agile", picLink: "./media/logo-icons/agile.png"},
-    {class: "e", picName: "API", picLink: "./media/logo-icons/api.jpeg"},
-    {class: "f", picName: "figma", picLink: "./media/logo-icons/figma.png"},
-    {class: "g", picName: "Git", picLink: "./media/logo-icons/git.png"},
-    {class: "h", picName: "database", picLink: "./media/logo-icons/db.jpeg"},
-    {class: "i", picName: "mongoDB", picLink: "./media/logo-icons/mongodb.png"},
-    {class: "j", picName: "mySQL", picLink: "./media/logo-icons/mysql.png"},
-    {class: "k", picName: "python", picLink: "./media/logo-icons/python.jpeg"},
-    {class: "l", picName: "aws", picLink: "./media/logo-icons/aws.svg"},
-    {class: "m", picName: "django", picLink: "./media/logo-icons/django.svg"}
-  ],
   contactLinks : [
     {name : "twitter", link: "", linkIcon : "./media/logo-icons/twitter-x.svg"},
     {name : "github", link: "", linkIcon : "./media/logo-icons/github.svg"},
     {name : "linkedIn", link: "", linkIcon : "./media/logo-icons/linkedin.svg"}
   ]
 }
+
+const stkPic = [
+  {class: "a", picName: "html", picLink: "./media/logo-icons/html.png"},
+  {class: "b", picName: "css", picLink: "./media/logo-icons/css.png"},
+  {class: "c", picName: "javaScript", picLink: "./media/logo-icons/js.png"},
+  {class: "d", picName: "agile", picLink: "./media/logo-icons/agile.png"},
+  {class: "e", picName: "API", picLink: "./media/logo-icons/api.jpeg"},
+  {class: "f", picName: "figma", picLink: "./media/logo-icons/figma.png"},
+  {class: "g", picName: "Git", picLink: "./media/logo-icons/git.jpeg"},
+  {class: "h", picName: "database", picLink: "./media/logo-icons/db.jpeg"},
+  {class: "i", picName: "mongoDB", picLink: "./media/logo-icons/mongodb.png"},
+  {class: "j", picName: "mySQL", picLink: "./media/logo-icons/mysql.png"},
+  {class: "k", picName: "python", picLink: "./media/logo-icons/python.png"},
+  {class: "l", picName: "aws", picLink: "./media/logo-icons/aws.svg"},
+  {class: "m", picName: "django", picLink: "./media/logo-icons/django.svg"},
+  {class: "n", picName: "django", picLink: "./media/logo-icons/react.png"},
+  {class: "o", picName: "django", picLink: "./media/logo-icons/github2.svg"}
+];
 
 const Ceo =({a, b, c})=>{
   return (
@@ -195,12 +150,12 @@ const About =()=> {
         <section className="devTeam">
           <h4 className="teamHd blurIn">Meet the Team</h4>
           <article className="team">
-            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo1("unveiled");}} handleClick={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo1("unveiled"); handleState("A", "on");}} claz={ceo1} title="Name" paragraph="small text skldhvk jhlksvnm vdslk snvlk sndvkkl skldhvk jhlksvnm vdslk snvlk skldhvk jhlksvnm vdslk snvlk"/>
-            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo2("unveiled");}} handleClick={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo2("unveiled"); handleState("B", "on");}}  claz={ceo2} title="Name" paragraph="small text"/>
-            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo3("unveiled");}} handleClick={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo3("unveiled"); handleState("C", "on");}} claz={ceo3} title="Name" paragraph="small text"/>
-            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo4("unveiled");}} handleClick={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo4("unveiled"); handleState("D", "on");}} claz={ceo4} title="Name" paragraph="small text"/>
+            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo1("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo1("unveiled"); handleState("A", "on");}} claz={ceo1} title="Name" paragraph="small text skldhvk jhlksvnm vdslk snvlk sndvkkl skldhvk jhlksvnm vdslk snvlk skldhvk jhlksvnm vdslk snvlk"/>
+            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo2("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo2("unveiled"); handleState("B", "on");}}  claz={ceo2} title="Name" paragraph="small text"/>
+            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo3("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo3("unveiled"); handleState("C", "on");}} claz={ceo3} title="Name" paragraph="small text"/>
+            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo4("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo4("unveiled"); handleState("D", "on");}} claz={ceo4} title="Name" paragraph="small text"/>
           </article>
-          <span className="combinedStack blurIn">{ceo1Obj.stkPic.map((item)=>(<img key={item.class} className={item.class} src={item.picLink} alt={item.picName}/>))}</span>
+          <span className="combinedStack blurIn">{stkPic.map((item)=>(<img key={item.class} className={item.class} src={item.picLink} alt={item.picName}/>))}</span>
         </section>
       </section>
     </PageAnimation>

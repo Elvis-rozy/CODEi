@@ -5,10 +5,9 @@ const links = [
   {id: 0, position: "a", linkClass: "home", linkName: "Home", linkSrc: "/home", linkIconSrc: "./media/logo-icons/home.svg"},
   {id: 1, position: "b", linkClass: "services", linkName: "Services", linkSrc: "/services", linkIconSrc: "./media/logo-icons/services.svg"},
   {id: 2, position: "c", linkClass: "work", linkName: "Work", linkSrc: "/work", linkIconSrc: "./media/logo-icons/laptop2.svg"},
-  {id: 3, position: "d", linkClass: "resources", linkName: "Resources", linkSrc: "/resources", linkIconSrc: "./media/logo-icons/resources.svg"},
-  {id: 4, position: "e", linkClass: "blog", linkName: "Blog", linkSrc: "/blog", linkIconSrc: "./media/logo-icons/blog.svg"},
-  {id: 5, position: "f", linkClass: "about", linkName: "About", linkSrc: "/about", linkIconSrc: "./media/logo-icons/about.svg"},
-  {id: 6, position: "g", linkClass: "contact", linkName: "Contact", linkSrc: "/contact", linkIconSrc: "./media/logo-icons/telephone.svg"}
+  {id: 3, position: "e", linkClass: "blog", linkName: "Blog", linkSrc: "/blog", linkIconSrc: "./media/logo-icons/blog.svg"},
+  {id: 4, position: "f", linkClass: "about", linkName: "About", linkSrc: "/about", linkIconSrc: "./media/logo-icons/about.svg"},
+  {id: 5, position: "g", linkClass: "contact", linkName: "Contact", linkSrc: "/contact", linkIconSrc: "./media/logo-icons/telephone.svg"}
 ]
 
 const Navigation =()=> {

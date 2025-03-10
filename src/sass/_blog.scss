@@ -2,7 +2,6 @@
   background: #d0d1d6;
   grid-template-columns: 1.2fr .6fr 1.2fr;
   height: 100dvh;
-  //padding: 15dvh 15dvw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,18 +22,15 @@
 
   h1{
     color: black;
-    font-size: 20dvh;
     position: absolute;
   }
 
   .phone {
-    width: 25%;
     z-index: 2;
     position: absolute;
   }
   .blogList {
     position: absolute;
-    bottom: 10%;
     left: 0;
 
     h4 {
@@ -52,19 +48,74 @@
   .blogDetails {
     position: absolute;
     right: 0;
-    bottom: 30%;
     color: black;
   }
   .date {
     position: absolute;
     left: 0;
-    top: 30%;
     color: black;
   }
   .author {
     position: absolute;
     left: 0;
-    top: 35%;
     color: black;
+  }
+}
+
+//Desktop
+@media (min-width: (700px)) {
+
+  .BlogPage h1 {
+    font-size: 20dvh;
+  }
+
+  .phone {
+    width: 25%;
+  }
+
+  .date{
+    top: 30%;
+  }
+
+  .author {
+    top: 35%;
+  }
+
+  .blogList {
+    bottom: 10%;
+  }
+
+  .blogDetails {
+    bottom: 30%;
+  }
+}
+
+//Phone
+@media (max-width: (699px)) {
+  .BlogPage {
+
+    h1 {
+      font-size: 7dvh;
+    }
+    
+    .phone {
+      width: 60%;
+    }
+  
+    .date{
+      top: 10%;
+    }
+  
+    .author {
+      top: 15%;
+    }
+  
+    .blogList {
+      bottom: 0%;
+    }
+  
+    .blogDetails {
+      bottom: 16%;
+    }
   }
 }

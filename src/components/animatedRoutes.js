@@ -3,7 +3,6 @@ import App from '../App';
 import Home from '../pages/Home';
 import Services from '../pages/Services';
 import Work from '../pages/Work';
-import Resources from "../pages/Resources";
 import Blog from '../pages/Blog';
 import About from "../pages/About";
 import Contact from "../pages/Contact";
@@ -19,7 +18,6 @@ const AnimatedRoutes = () => {
         <Route path= "home" element={<Home/>} />
         <Route path= "services" element={<Services/>} />
         <Route path= "work" element={<Work/>} />
-        <Route path= "resources" element={<Resources/>} />
         <Route path= "blog" element={<Blog/>} />
         <Route path= "about" element={<About/>} />
         <Route path= "contact" element={<Contact/>} />

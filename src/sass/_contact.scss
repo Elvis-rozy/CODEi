@@ -1,6 +1,4 @@
 .contactMain {
-  display: grid;
-  grid-template-columns: 0.8fr 1fr 0.8fr;
   height: 100dvh;
   background: white;
   align-items: center;
@@ -9,15 +7,11 @@
   .left {
 
     h1 {
-      left: 15%;
-      top: 20%;
       animation-delay: 5s;
     }
   }
 
   article {
-    width: 100%;
-    height: 65%;
 
     h1 {
       color: black;
@@ -34,7 +28,6 @@
   .b {
     position: relative;
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
     border-radius: 0;
@@ -194,24 +187,19 @@
     align-items: center;
 
     h1 {
-      right: 10%;
-      bottom: 25%;
       animation-delay: 5.3s;
     }
 
     .contactIcons {
       display: flex;
       align-items: center;
-      gap: 10px;
 
       img {
-        width: 5dvh;
-        height: 5dvh;
         transition: .3s;
 
         &:hover{
-          width: 10dvh;
-          height: 10dvh;
+          width: 6dvh;
+          height: 6dvh;
         }
       }
 
@@ -219,6 +207,97 @@
       .bd {animation-delay: 6s;}
       .cd {animation-delay: 6.5s;}
       .dd {animation-delay: 7s;}
+    }
+  }
+}
+
+//Desktop
+@media (min-width: (700px)) {
+  .contactMain {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 0.8fr;
+    padding: 0;
+
+    article {
+      height: 30%;
+
+      h1 {
+        font-size: 20dvh;
+      }
+    }
+  
+    .left h1 {
+      left: 15%;
+      top: 20%;
+    }
+
+    .b {
+      height: 70%;
+      width: 100%;
+    }
+
+    .right h1 {
+      right: 10%;
+      bottom: 25%;
+    }
+
+    .right .contactIcons {
+      gap: 10px;
+
+      img {
+        width: 5dvh;
+        height: 5dvh;
+      }
+    }
+  }
+}
+
+//Phone
+@media (max-width: (699px)) {
+  .contactMain {
+    display: flex;
+    flex-direction: column;
+    padding: 2dvh;
+
+    article {
+      height: 40%;
+
+      h1 {
+        font-size: 11dvh;
+      }
+    }
+
+    .left {
+      height: 35%;
+    }
+    
+    .left h1 {
+      left: 4%;
+      top: 28%;
+    }
+    
+    .b {
+      height: 100%;
+      width: 85%;
+
+      h1 {
+        left: 32%;
+        top: 34%;
+      }
+    }
+
+    .right h1 {
+      right: 2%;
+      bottom: 34%;
+    }
+
+    .right .contactIcons {
+      gap: 20px;
+
+      img {
+        width: 4dvh;
+        height: 4dvh;
+      }
     }
   }
 }
