@@ -22,7 +22,7 @@ const mobileInfo = {
 }
 
 const Services =()=> {
-  const [bg, setBg] = useState("linear-gradient(45deg, #e7e7e7, #efd3c8)");
+  const [bg, setBg] = useState("linear-gradient(45deg, rgb(227 225 226), rgb(223 223 223))");
   const [state1, setState1] = useState("activeLarge");
   const [state2, setState2] = useState("inactiveSmall");
   const [state3, setState3] = useState("inactiveSmall");
@@ -74,7 +74,7 @@ const Services =()=> {
         <Navigation/>
         <div className="categories grid">
           <section>
-            <article className={`${state1} border web blurIn`} onMouseEnter={()=>{handleState(state1, state2, state3, state4); setState1("activeLarge");}} onClick={()=>{handleClick("A", "onn"); setBg("linear-gradient(45deg, #e7e7e7, #efd3c8)")}}><h3>Web Development</h3></article>
+            <article className={`${state1} border web blurIn`} onMouseEnter={()=>{handleState(state1, state2, state3, state4); setState1("activeLarge");}} onClick={()=>{handleClick("A", "onn"); setBg("linear-gradient(45deg, rgb(227 225 226), rgb(223 223 223))")}}><h3>Web Development</h3></article>
             <article className={`${state2} border branding blurIn`} onMouseEnter={()=>{handleState(state1, state2, state3, state4); setState2("activeSmall");}} onClick={()=>{handleClick("B", "onn"); setBg("linear-gradient(45deg, #efefef, #d3bbac)")}}><h3>Branding</h3></article>
           </section>
           <section>
