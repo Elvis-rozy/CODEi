@@ -21,6 +21,7 @@
   }
 
   h1{
+    font-family: montserratBold;
     color: black;
     position: absolute;
   }
@@ -34,6 +35,7 @@
     left: 0;
 
     h4 {
+      font-family: montserratBold;
       font-size: 3dvh;
       margin-bottom: 10px;
     }
@@ -42,6 +44,10 @@
       display: flex;
       flex-direction: column;
       gap: 5px;
+
+      li {
+        font-family: montserratBold;
+      }
     }
   }
 

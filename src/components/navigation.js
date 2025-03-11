@@ -19,7 +19,6 @@ const Navigation =()=> {
     setMenuVisibility(value1);
     setIconVisibility(value2);
     setShown(value3);
-    console.log(shown);
   }
   return (
     <>

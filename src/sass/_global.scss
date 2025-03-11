@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: space-evenly;
   background: #1c1c1c;
-  position: absolute;
+  position: fixed;
   border-radius: 30px;
   cursor: pointer;
   transition: 0.2s;
@@ -184,6 +184,10 @@
   .grid {
     display: grid;
     gap: 1dvh;
+  }
+
+  .rightGrid {
+    height: 39dvh;
   }
 }
 

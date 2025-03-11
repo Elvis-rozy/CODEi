@@ -150,10 +150,10 @@ const About =()=> {
         <section className="devTeam">
           <h4 className="teamHd blurIn">Meet the Team</h4>
           <article className="team">
-            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo1("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo1("unveiled"); handleState("A", "on");}} claz={ceo1} title="Name" paragraph="small text skldhvk jhlksvnm vdslk snvlk sndvkkl skldhvk jhlksvnm vdslk snvlk skldhvk jhlksvnm vdslk snvlk"/>
-            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo2("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo2("unveiled"); handleState("B", "on");}}  claz={ceo2} title="Name" paragraph="small text"/>
-            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo3("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo3("unveiled"); handleState("C", "on");}} claz={ceo3} title="Name" paragraph="small text"/>
-            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo4("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo4("unveiled"); handleState("D", "on");}} claz={ceo4} title="Name" paragraph="small text"/>
+            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo1("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo1("unveiled"); handleState("A", "on");}} claz={`textCard ${ceo1}`} title="Name" paragraph="small text skldhvk jhlksvnm vdslk snvlk sndvkkl skldhvk jhlksvnm vdslk snvlk skldhvk jhlksvnm vdslk snvlk"/>
+            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo2("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo2("unveiled"); handleState("B", "on");}}  claz={`textCard ${ceo2}`} title="Name" paragraph="small text"/>
+            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo3("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo3("unveiled"); handleState("C", "on");}} claz={`textCard ${ceo3}`} title="Name" paragraph="small text"/>
+            <TextCard hover={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo4("unveiled");}} click={()=>{handleVeil(ceo1, ceo2, ceo3, ceo4); setCeo4("unveiled"); handleState("D", "on");}} claz={`textCard ${ceo4}`} title="Name" paragraph="small text"/>
           </article>
           <span className="combinedStack blurIn">{stkPic.map((item)=>(<img key={item.class} className={item.class} src={item.picLink} alt={item.picName}/>))}</span>
         </section>

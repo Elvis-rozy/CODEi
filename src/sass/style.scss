@@ -15,7 +15,7 @@
   box-sizing: border-box;
   list-style: none;
   scroll-behavior: smooth;
-  font-family:  "montserratThin", sans-serif;
+  font-family: "montserratThin", sans-serif;
   color: white;
 }
 
@@ -27,32 +27,19 @@
   font-family: montserratBold;
   src: url("../font/Montserrat-SemiBold.ttf");
 }
-@font-face {
-  font-family: montserratExtraBold;
-  src: url("../font/Montserrat-ExtraBold.ttf");
-}
-@font-face {
-  font-family: montserratBlack;
-  src: url("../font/Montserrat-Black.ttf");
-}
-
-@font-face {
-  font-family: montserratReg;
-  src: url("../font/Montserrat-Regular.ttf");
-}
-
+      
 @font-face {
   font-family: montserratThin;
   src: url("../font/Montserrat-Thin.ttf");
 }
-
+      
 @font-face {
   font-family: droid;
   src: url("../font/android_7.ttf");
 }
 
 body {
-  background: #d0d1d6;
+  background: white;
   height: 100dvh;
 }
 
@@ -87,6 +74,7 @@ body {
     animation-delay: 6.5s;
   }
 }
+
 .agencyMoto {
   display: flex;
   font-size: 11px;

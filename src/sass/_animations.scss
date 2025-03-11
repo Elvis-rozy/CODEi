@@ -85,16 +85,6 @@
   100% { transform: translateX(-100%); }
 }
 
-@keyframes backgrounds {
-  0% { background: url("../media/backgrounds/svs2.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
-  30% { background: url("../media/backgrounds/svs2.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
-  35% { background: url("../media/backgrounds/svs3.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
-  65% { background: url("../media/backgrounds/svs3.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
-  70% { background: url("../media/backgrounds/svs4.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
-  95% { background: url("../media/backgrounds/svs4.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
-  100% { background: url("../media/backgrounds/svs2.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
-}
-
 @keyframes intro {
   0% {display: none; height: 15px; }
   80% {display: none; height: 15px; }

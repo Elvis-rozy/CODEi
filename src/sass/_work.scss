@@ -1,28 +1,21 @@
 .WorkPage {
-  height: 100dvh;
   width: 100dvw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
   overflow: hidden;
   background: white;
   gap: 2dvh;
 
-  .projects {
-    width: 90%;
-    height: 46dvh;
-    display: flex;
+  .projects, .projects-mobile {
     gap: 1.5dvh;
 
-    .textCard {
+    .textCard, .box {
       background: black;
-      border-radius: 30px;
       transition: .3s;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding: 0 0 25px 20px;
       overflow: hidden;
       cursor: pointer;
 
@@ -110,7 +103,7 @@
         border-radius: 20px;
       }
       h2 {
-        width: 30%;
+        width: max-content;
         font-size: 14px;
         margin-bottom: 5px;
       }
@@ -122,7 +115,6 @@
   }
 
   .details {
-    display: flex;
     height: 46dvh;
     position: relative;
     justify-content: flex-end;
@@ -352,11 +344,52 @@
 @media (min-width: (700px)) {
   .WorkPage {
     padding: 3dvh 0 3dvh 4dvh;
+    justify-content: flex-end;
+    height: 100dvh;
+  }
+
+  .projects, .details {
+    display: flex;
+  }
+
+  .projects-mobile {
+    display: none;
+  }
+
+  .projects {
+    width: 90%;
+    height: 46dvh;
+
+    .textCard {
+      border-radius: 30px;
+      padding: 0 0 15px 10px;
+    }
   }
 }
 //Phone
 @media (max-width: (699px)) {
   .WorkPage {
-    padding: 7dvh 1dvh 3dvh;
+    padding: 8dvh 1dvh 3dvh;
+    justify-content: start;
+    height: auto;
+  }
+
+  .projects, .details {
+    display: none;
+  }
+
+  .projects-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    position: relative;
+    width: 100%;
+
+    .box {
+      border-radius: 15px;
+      width: 48%;
+      height: 30dvh;
+      padding: 0 0 15px 10px;
+    }
   }
 }

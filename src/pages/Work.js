@@ -77,7 +77,7 @@ const Work =()=> {
                 obj = project;
                 project.state="";
                 return project;
-              }} a={bi} claz={`project ${project.state} ${activeItemId === project? 'unveiled' : ''}`}
+              }} a={bi} claz={`textCard inView project ${project.state} ${activeItemId === project? 'unveiled' : ''}`}
               click={()=>{}}/>
             )
           })}
@@ -88,6 +88,13 @@ const Work =()=> {
             <h1>Our Work</h1>
           </div>
           <ProjectDetails project={obj}/>
+        </section>
+        <section className="projects-mobile">
+          {projects.map((project)=>{
+            return (
+              <TextCard key={project.id} title={project.name} paragraph={project.desc1} hover={()=>{}} claz='project box' click={()=>{}}/>
+            )
+          })}
         </section>
       </section>
     </PageAnimation>

@@ -78,8 +78,8 @@ const Services =()=> {
             <article className={`${state2} border branding blurIn`} onMouseEnter={()=>{handleState(state1, state2, state3, state4); setState2("activeSmall");}} onClick={()=>{handleClick("B", "onn"); setBg("linear-gradient(45deg, #efefef, #d3bbac)")}}><h3>Branding</h3></article>
           </section>
           <section>
-            <article className={`${state3} border mobile blurIn`} onMouseEnter={()=>{handleState(state1, state2, state3, state4); setState3("activeSmall");}} onClick={()=> {handleClick("C", "onn"); setBg("linear-gradient(45deg, #ebeff5, #a7b8d3)")}}><h3>Mobile Development</h3></article>
-            <article className={`${state4} border opt blurIn`} onMouseEnter={()=>{handleState(state1, state2, state3, state4); setState4("activeLarge");}} onClick={()=> {handleClick("D", "onn"); setBg("linear-gradient(45deg, #8e7dc7, #664cef)")}}><h3>Code Optimization</h3></article>
+            <article className={`${state3} border mobile blurIn`} onMouseEnter={()=>{handleState(state1, state2, state3, state4); setState3("activeSmall");}} onClick={()=>{handleClick("C", "onn"); setBg("linear-gradient(45deg, #ebeff5, #a7b8d3)")}}><h3>Mobile Development</h3></article>
+            <article className={`${state4} border opt blurIn`} onMouseEnter={()=>{handleState(state1, state2, state3, state4); setState4("activeLarge");}} onClick={()=>{handleClick("D", "onn"); setBg("linear-gradient(45deg, #8e7dc7, #664cef)")}}><h3>Code Optimization</h3></article>
           </section>
         </div>
         <CallServiceInfo/>
